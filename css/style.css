@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header & Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: #0779e4 3px solid;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+header nav ul li a:hover {
+    color: #0779e4;
+}
+
+/* Forms */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="date"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for width 100% */
+}
+
+form input[type="submit"],
+.button-link {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* For button-link */
+    font-size: 1em;
+}
+
+form input[type="submit"]:hover,
+.button-link:hover {
+    background: #555;
+}
+
+/* Tables */
+table.ledger-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.ledger-table th,
+table.ledger-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table.ledger-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+table.ledger-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+table.ledger-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Messages */
+.container p[style*="color:green"] { /* Selects existing inline success messages */
+    background-color: #e6ffed;
+    border: 1px solid #b7e1cd;
+    color: #006400 !important; /* Override inline style color for consistency */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.container p[style*="color:red"] { /* Selects existing inline error messages */
+    background-color: #ffe6e6;
+    border: 1px solid #e1b7b7;
+    color: #990000 !important; /* Override inline style color for consistency */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Tally Report Styles */
+.tally-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.tally-section h3 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.tally-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tally-section ul li {
+    padding: 5px 0;
+    font-size: 1.1em;
+}
+
+.tally-section ul li strong {
+    min-width: 200px; /* Adjust as needed */
+    display: inline-block;
+}
+
+
+/* Filter Form Styles */
+.filter-form h4 {
+    margin-top:0;
+}
+.filter-form .filter-group {
+    display: inline-block; /* Or flex for more control */
+    margin-right: 15px;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+.filter-form .filter-group label {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+.filter-form .filter-group input[type="date"],
+.filter-form .filter-group select {
+    width: auto; /* Override general form input width */
+    padding: 8px;
+}
+.filter-form .filter-group input[type="submit"],
+.filter-form .button-link {
+    padding: 8px 12px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
